@@ -7,7 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Batman promo</title>
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/index.css">
+
+  <script src="js/swiper-bundle.min.js" defer></script>
+  <script src="js/script.js" defer></script>
 </head>
 
 <body>
@@ -48,8 +52,38 @@
     </div>
   </header>
 
-  <main class="main main_index">
-    <img class="logo" src="img/logo.png" alt="Логотип фильма Бэтмен" width="329" height="235">
+  <main class="main main_slider">
+    <div class="slider-main swiper">
+      <ul class="slider-main__list swiper-wrapper">
+        <li class="slider-main__item swiper-slide">
+          <img class="slider-main__img" src="photo/photo01.jpg" alt="фото">
+        </li>
+        <li class="slider-main__item swiper-slide">
+          <img class="slider-main__img" src="photo/photo02.jpg" alt="фото">
+        </li>
+        <li class="slider-main__item swiper-slide">
+          <img class="slider-main__img" src="photo/photo03.jpg" alt="фото">
+        </li>
+      </ul>
+    </div>
+
+    <div class="pagination">
+      <button class="pagination__arrow"></button>
+
+      <div class="slider-thumbs swiper">
+        <ul class="slider-thumbs__list swiper-wrapper">
+          <li class="slider-thumbs__item swiper-slide">
+            <img class="slider-thumbs__img" src="photo/photo01-thumbs.jpg" alt="превью фото" width="260" height="100">
+          </li>
+          <li class="slider-thumbs__item swiper-slide">
+            <img class="slider-thumbs__img" src="photo/photo02-thumbs.jpg" alt="превью фото" width="260" height="100">
+          </li>
+          <li class="slider-thumbs__item swiper-slide">
+            <img class="slider-thumbs__img" src="photo/photo03-thumbs.jpg" alt="превью фото" width="260" height="100">
+          </li>
+        </ul>
+      </div>
+    </div>
   </main>
 
   <footer class="footer">
